@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Day 6</h2>
+    <hr>
+    <h4>1. Create a button , on click of which new Heading tag h1 should be added with text as "MERN stack" on the screen above button</h4>
+    <h1 id="h1">MERN stack</h1>
+    <button id="btn" onclick="myfunc()">click</button>
+
+<hr>
+<h4>2. Write code to get 1st H1 element from a webpage using DOM</h4>
+<h1 id="first"> I AM FIRST</h1>
+    <h1 id="second"> I AM second</h1>
+    <h1 id="third"> I AM Third</h1>
+<hr>
+<h4>3. Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second</h4>
+<div id="time">
+    
+    <div><span id="HH">HH</span></div>
+    <div><span id="MM">MM</span></div>
+    <div><span id="SS">SS</span></div>
+    <div><span id="ampm">ampm</span></div>
+
+</div>
+<hr>
+<h4>4. Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy"</h4>
+<div id="hw">Hello world</div>
+<button id="btn1" onclick="myfunc1()">Replace text</button>
+
+
+<hr>
+
+<h4>5. Create an HTML page having content as Hello world and a button named "Hide Text." When user will click on this button hide the "Hello World" text</h4>
+<div id="hw1">Hello world</div>
+<button id="btn2" onclick="myfunc2()">Hide text</button>
+
+<hr>
+
+
+
+
+
+
+
+
+<p>6.Given an array of 0's and 1's find out number of 0's</p>
+
+<pre>
+    let array = [0,0,0,1,0,1,0,0,1,0]
+    let count = 0;
+    for(let i=0; i < array.length;i++){
+        if(array[i] == 0){
+            count++
+        }
+    }
+    console.log(count)
+</pre>
+<hr>
+ 
+<script>
+    let array = [0,0,0,1,0,1,0,0,1,0]
+    let count = 0;
+    for(let i=0; i<array.length;i++){
+        if(array[i]==0){
+            count++
+        }
+    }
+    console.log(count)
+</script>
+
+<p>7.Given an array find out total no. of odd and even nos.</p>
+<pre>
+    let arr = [1,2,3]
+
+    let odd=0;
+    let even = 0;
+  
+    for(let i=0;i < arr.length;i++){
+        if(arr[i]%2 == 1){
+            odd++
+            
+        }
+        else{
+            even++
+        }
+    }
+    console.log("Total number of odd is " + odd)
+    console.log("Total number of even is " + even)
+</pre>
+<hr>
+<script>
+    let arr = [1,2,3]
+
+    let odd=0;
+    let even = 0;
+  
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]%2 == 1){
+            odd++
+            
+        }
+        else{
+            even++
+        }
+    }
+    console.log("Total number of odd is " + odd)
+    console.log("Total number of even is " + even)
+</script>
+<p>8.Given a string find out number of vowels </p>
+
+<pre>
+
+    let name = "aeiou"
+    let i = 0;
+    let vowels = 0;
+
+    while(name[i] != undefined){
+        if(name[i]== 'a' || name[i]== 'e' || name[i]== 'i' || name[i]== 'o' || name[i]== 'u' ||name[i]== 'A' || name[i]== 'E' || name[i]== 'I' || name[i]== 'O' || name[i]== 'U' )
+        
+       console.log(name[i])
+        vowels++
+        i++;
+    }
+
+</pre>
+<hr>
+
+<script>
+    let name = "aeiou"
+    let i = 0;
+    let vowels = 0;
+
+    while(name[i] != undefined){
+        if(name[i]== 'a' || name[i]== 'e' || name[i]== 'i' || name[i]== 'o' || name[i]== 'u' ||name[i]== 'A' || name[i]== 'E' || name[i]== 'I' || name[i]== 'O' || name[i]== 'U' )
+        
+       console.log(name[i])
+        vowels++
+        i++;
+    }
+
+</script>
+
+<p>9.Write a code to create two objects with 2 properties each, one will be string and other will be an array. Create a function to check if all the elements of the arrays in both the objects are same</p>
+
+<pre>
+    let obj1={
+        name1:"eswar",
+        array1:[12,3,4]
+       }
+       let obj2={
+        name2:"prasad",
+        array2:[12,3,4]
+       }
+       
+
+  function check(){
+    let a=0;
+
+        for(i=0; i < obj2.array2.length; i++){
+           if(obj1.array1[i] != obj2.array2[i]){
+              a=1;
+              break;
+           }
+        }
+        if(a==1){
+            console.log("both array are not same")
+           }else{
+            console.log("both array is same");
+           }
+       }
+      
+       check();
+
+
+</pre>
+
+<script>
+    
+     let obj1={
+        name1:"eswar",
+        array1:[12,3,4]
+       }
+       let obj2={
+        name2:"prasad",
+        array2:[12,3,4]
+       }
+       
+
+  function check(){
+    let a=0;
+
+        for(i=0; i<obj2.array2.length; i++){
+           if(obj1.array1[i] != obj2.array2[i]){
+              a=1;
+              break;
+           }
+        }
+        if(a==1){
+            console.log("both array are not same")
+           }else{
+            console.log("both array is same");
+           }
+       }
+      
+       check();
+
+</script>
+
+    <script>
+    document.getElementById("h1").innerHTML = "";
+    function myfunc(){
+        document.getElementById("h1").innerHTML = "MERN stack"
+    }
+
+
+
+
+
+
+
+
+
+    function getTime(){
+    let date = new Date();
+    let HH = date.getHours();
+    let MM = date.getMinutes();
+    let SS = date.getSeconds();
+    let ampm = HH >= 12 ? 'PM' : 'AM';
+
+    HH = HH % 12;
+    MM = MM < 10 ? '0' + MM : MM;
+    if(HH < 10)
+    HH = "0" + HH
+
+   
+
+    document.getElementById("HH").innerText = HH;
+    document.getElementById("MM").innerText = MM;
+    document.getElementById("SS").innerText = SS;
+    document.getElementById("ampm").innerText =ampm;
+
+    
+
+    setTimeout(getTime, 1000);
+}
+
+
+getTime();
+
+
+
+function myfunc1(){
+  document.getElementById("hw").innerHTML="welcome to elevation academy"
+}
+
+function myfunc2(){
+  document.getElementById("hw1").innerHTML="";
+}
+
+
+
+
+let arr1 = [1,2,3,4,5,6,7,8]
+function EvenOdd(){
+
+let even = 0;
+let odd = 0;
+for(i=0;i<arr1.length;i++)
+  if( arr1[i]%2==0){
+     even++;}
+     else{
+          odd++;
+     }
+    console.log(even)
+    console.log(odd)
+       }
+   
+
+EvenOdd()
+
+
+
+
+let xyz ={
+    name:"eswar",
+    arr1 :[1,2,3,4,5,6,7]
+}
+let abc ={
+    name:"pavan",
+    arr2 :[1,2,3,4,5,6,7]
+}
+
+
+
+
+
+
+
+
+
+
+let h1= document.querySelector("#first")
+document.querySelector("b").innerHTML = h1.innerHTML
+
+    </script>
+</body>
+</html>
